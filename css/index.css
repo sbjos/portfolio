@@ -13,25 +13,29 @@
   .container-header {
     grid-area: aa;
     grid-column: span 12;
-    display: block;
-    flex-wrap: nowrap;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 8px 15px;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #dadce0;
+    height: min-content;
+    align-items: center;
 
     .header {
       display: inline-flex;
-      gap: 25px;
       flex-wrap: nowrap;
+      justify-content: flex-start;
+      gap: 15px;
+      color: var(--text-color-1);
 
       .name {
-        font-size: 1.5em;
-        flex-wrap: nowrap;
+        font-size: 1.3em;
+        margin: 0;
       }
 
       .title {
-        padding-top: 2px;
+        font-size: 1em;
+        padding-top: 5px;
+        margin: 0;
       }
     }
 
@@ -41,49 +45,53 @@
 
       .navigation-items {
         display: flex;
+        justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
         gap: 15px;
 
         .navigation-item {
-          color: black;
+          color: var(--text-color-1);
           text-decoration: none;
         }
       }
     }
-  }
-
-  .container-summary {
-    grid-column: span 12;
-    display: block;
-    padding: 80px 600px;
-    background-color: rgba(14, 113, 143, 0.658);
-
-    .summary {
-      color: white;
-      text-align: center;
-      line-height: 25px;
-    }
-
     .download-resume-button {
       display: flex;
-      margin-top: 45px;
+      justify-content: flex-end;
+      align-items: center;
 
       .button {
-        color: white;
+        color: var(--text-color-2);
         text-decoration: none;
-        border: 1px solid white;
+        border: 1px solid rgb(71, 70, 70);
         padding: 5px 10px;
         border-radius: 3px;
       }
     }
   }
 
-  .container-education {
-    grid-area: ca;
+  .container-summary {
+    grid-area: ba;
+    grid-column: span 12;
+    background-color: rgba(14, 113, 143, 0.658);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #dadce0;
+    
+    .summary {
+      color: var(--text-color-3);
+      text-align: center;
+      line-height: 25px;
+      width: 500px;
+      margin: auto;
+      padding: 80px 0;
+    }
   }
 
   .container-experience {
+    grid-column: span 12;
+  }
+
+  .container-education {
     grid-area: da;
   }
 
@@ -93,10 +101,5 @@
 
   footer {
     grid-area: fa;
-  }
-
-  hr {
-    margin-left: 0px;
-    width: 50em;
   }
 }

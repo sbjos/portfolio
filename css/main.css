@@ -4,3 +4,29 @@
   font-style: normal;
   justify-content: center;
 }
+
+body {
+  --text-color-1: #131415c4;
+  --text-color-2: #5f5f5f;
+  --text-color-3: #ffffff;
+  --text-color-4: #494848;
+  --label-text-color: #22262abf;
+  --background-color-1: #0a8bd6ef;
+  --background-color-2: #e3e3e373;
+  --background-color-3: #f3f2ef;
+  --background-color-4: #ebf3fa;
+  --button-link-color: #054a76;
+  --button-link-color-hover: #1662d4;
+  --button-color-blue: #0050c7;
+  --button-color-red: #c7006d;
+  --button-color-green: #0b7c47;
+  --placeholder-color: #b5b5b5;
+  --border-color: #6d767e;
+  --border-focus-color: #02459c;
+  --submitted-card-color: #60879a;
+  --inreview-card-color: #fd650de5;
+  --needswork-card-color: #dc3848;
+  --completed-card-color: #198653;
+  --brand-color: #495057;
+  --error-color: #b3261e;
+}
