@@ -1,60 +1,84 @@
-* {
-  font-family: "Poppins", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .container {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(12, minmax(50px, 188.66px));
+  grid-row-gap: 3px;
   grid-template-areas:
     "aa ab ac ad ae af ag ah ai aj ak al"
-    "ba bb bc bd be bf bg bh bi bj bk bl"
+    "ba bb bc bf bf bf bf bf bf bj bk bl"
     "ca cb cc cd ce cf cg ch ci cj ck cl"
     "da db dc dd de df dg dh di dj dk dl"
     "ea eb ec ed ee ef eg eh ei ej ek el"
     "fa fb fc fd fe ff fg fh fi fj fk fl";
 
-  .container-1 {
+  .container-header {
     grid-area: aa;
     grid-column: span 12;
     display: block;
     flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #dadce0;
 
-    .container-header {
-      display: flex;
-      justify-content: space-between;
-      padding: 0 15px;
-      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #dadce0;
+    .header {
+      display: inline-flex;
+      gap: 25px;
+      flex-wrap: nowrap;
 
-      .header {
-        display: inline-flex;
-        gap: 25px;
+      .name {
+        font-size: 1.5em;
         flex-wrap: nowrap;
-
-        .name {
-          font-size: 1.5em;
-          flex-wrap: nowrap;
-        }
-
-        .title {
-          margin-top: 24px;
-        }
       }
 
-      .navigation {
+      .title {
+        padding-top: 2px;
+      }
+    }
+
+    .navigation {
+      display: flex;
+      align-items: center;
+
+      .navigation-items {
         display: flex;
         align-items: center;
         flex-wrap: nowrap;
-        justify-content: space-between;
         gap: 15px;
+
+        .navigation-item {
+          color: black;
+          text-decoration: none;
+        }
       }
     }
   }
 
   .container-summary {
-    grid-area: ba;
+    grid-column: span 12;
+    display: block;
+    padding: 80px 600px;
+    background-color: rgba(14, 113, 143, 0.658);
+
+    .summary {
+      color: white;
+      text-align: center;
+      line-height: 25px;
+    }
+
+    .download-resume-button {
+      display: flex;
+      margin-top: 45px;
+
+      .button {
+        color: white;
+        text-decoration: none;
+        border: 1px solid white;
+        padding: 5px 10px;
+        border-radius: 3px;
+      }
+    }
   }
+
   .container-education {
     grid-area: ca;
   }

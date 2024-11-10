@@ -11,40 +11,62 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <div class="container">
-      <div class="container-1">
-        <div class="container-header">
-          <div class="header">
-            <h1 class="name">Sebastien Joseph</h1>
-            <h4 class="title">Software Developer</h4>
-          </div>
-          <nav class="navigation">
-            <a href="./projects.html">Skill</a>
-            <a href="./contactMe.html">Experience</a>
-            <a href="./projects.html">Portfolio</a>
-            <a href="./contactMe.html">Contact</a>
+      <div class="container-header">
+        <div class="header">
+          <h1 class="name">Sebastien Joseph</h1>
+          <h4 class="title">Software Developer</h4>
+        </div>
+        <div class="navigation">
+          <nav class="navigation-items">
+            <a href="./skill.html" class="navigation-item skill">Skill</a>
+            <a href="./experience.html" class="navigation-item experience"
+              >Experience</a
+            >
+            <a href="./portfolio.html" class="navigation-item portfolio"
+              >Portfolio</a
+            >
+            <a href="./contact.html" class="navigation-item contact">Contact</a>
           </nav>
+        </div>
+      </div>
+      <div class="container-summary">
+        <div class="summary">
+          <div class="summary-1">
+            <p class="paragraph">
+              IT Professional and Software Developer with 5+ years in system
+              administration, Microsoft 365 management, and full-stack
+              development.
+            </p>
+            <p class="paragraph">
+              Skilled in managing Microsoft 365 (Exchange, SharePoint, Teams,
+              Azure AD) and developing with Java, JavaScript, React, CSS, and
+              HTML. Strong in troubleshooting, PowerShell scripting, and
+              performance optimization.
+            </p>
+            <p class="paragraph">
+              Recognized for collaborative approach and delivering secure,
+              scalable solutions that meet business needs.
+            </p>
+          </div>
+        </div>
+        <div class="download-resume-button">
+          <a
+            data-testid="linkElement"
+            href="./file/Resume - Sebastien Joseph.pdf"
+            download
+            target="_blank"
+            class="button"
+            aria-disabled="false"
+            >DOWNLOAD RESUME
+          </a>
         </div>
         <!-- TODO: Possibly remove <hr /> -->
         <!-- <hr /> -->
-      </div>
-      <div class="container-summary">
-        <p class="summary">
-          IT Professional and Software Developer with over 5 years of experience
-          in system administration, Microsoft 365 management, and full-stack
-          development. Proficient in managing and securing Microsoft 365
-          environments, including Exchange Online, SharePoint Online, Teams, and
-          Azure AD, alongside strong development skills in Java, JavaScript,
-          React.js, CSS, and HTML. Skilled in troubleshooting, scripting with
-          PowerShell, and optimizing performance across both IT infrastructure
-          and web applications. Known for a collaborative approach, commitment
-          to continuous improvement, and ability to deliver scalable, secure
-          solutions that align with business needs and enhance user experience.
-        </p>
-        <hr />
       </div>
       <div class="container-education">
         <h2>Education</h2>
