@@ -4,217 +4,238 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <div>
-      <h1>Sebastien Joseph</h1>
-      <div>
-        <a href="./projects.html">Projects</a>
-        <a href="./contactMe.html">Contact me</a>
+    <div class="container">
+      <div class="container-1">
+        <div class="container-header">
+          <h1 class="name">Sebastien Joseph</h1>
+          <nav class="navigation">
+            <a href="./projects.html">Skill</a>
+            <a href="./contactMe.html">Experience</a>
+            <a href="./projects.html">Portfolio</a>
+            <a href="./contactMe.html">Contact</a>
+          </nav>
+        </div>
+        <hr />
       </div>
-      <hr />
+      <div class="container-summary">
+        <p class="summary">
+          IT Professional and Software Developer with over 5 years of experience
+          in system administration, Microsoft 365 management, and full-stack
+          development. Proficient in managing and securing Microsoft 365
+          environments, including Exchange Online, SharePoint Online, Teams, and
+          Azure AD, alongside strong development skills in Java, JavaScript,
+          React.js, CSS, and HTML. Skilled in troubleshooting, scripting with
+          PowerShell, and optimizing performance across both IT infrastructure
+          and web applications. Known for a collaborative approach, commitment
+          to continuous improvement, and ability to deliver scalable, secure
+          solutions that align with business needs and enhance user experience.
+        </p>
+        <hr />
+      </div>
+      <div class="container-education">
+        <h2>Education</h2>
+        <ul>
+          <li>
+            <h3>Pen Foster</h3>
+            <ul>
+              <li>Graduate of the Computer Support Technician Program</li>
+              <li>October 2012 -October 2013</li>
+            </ul>
+          </li>
+          <li>
+            <h3>Bloomtech</h3>
+            <ul>
+              <li>Graduate of the Backend Development Program</li>
+              <li>December 2022 - February 2024</li>
+            </ul>
+          </li>
+          <li>
+            <h3>Udemy</h3>
+            <ul>
+              <li>Currently enrolled in Full-Stack Web Developer class</li>
+            </ul>
+          </li>
+        </ul>
+        <hr />
+      </div>
+      <div class="container-experience">
+        <h2>Work Experience</h2>
+        <ul>
+          <li>
+            <h3>Koclat - System Administrator</h3>
+            <h4>October 2023 to present</h4>
+            <ul>
+              <li>
+                Installed and maintained IT infrastructure, ensuring optimal
+                performance and up-to-date security measures.
+              </li>
+              <li>
+                Delivered technical solutions that aligned with organizational
+                goals, improving operational efficiency.
+              </li>
+              <li>
+                Implemented Microsoft 365 across the organization, focusing on
+                identity, access management and security to establish a safe and
+                productive environment.
+              </li>
+              <li>
+                Managed data protection and retention policies to ensure
+                compliance and security across Microsoft 365 applications.
+              </li>
+              <li>
+                Assist in building a Human Resource application for the
+                organization written in Java and React for better employee
+                management.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Zones - Microsoft Support Engineer (Floorwalker)</h3>
+            <h4>September 2021 to June 2023</h4>
+            <ul>
+              <li>
+                Provided technical leadership and advisement, ensuring an
+                optimal customer experience to Support Engineers
+              </li>
+              <li>
+                Stayed updated on Microsoft 365 technology changes, improving
+                troubleshooting efficiency.
+              </li>
+              <li>
+                Demonstrated expertise in troubleshooting Microsoft 365
+                applications (Exchange, SharePoint, Teams, Microsoft Entra
+                Connect) using GUID and PowerShell, leading to faster ticket
+                resolution.
+              </li>
+              <li>
+                Review traces, console logs source code and other type of logs
+                for troubleshooting bugs and resolving customer issues.
+              </li>
+              <li>
+                Assisted in backlog management, reducing ticket resolution time
+                and improving customer satisfaction.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Zones - Microsoft Support Engineer</h3>
+            <h4>September 2020 to September 2021</h4>
+            <ul>
+              <li>
+                Delivered exceptional customer service to Microsoft Premier
+                customers, expertly configuring and troubleshooting Microsoft
+                365 security and compliance and applications (Exchange,
+                SharePoint, Teams, Microsoft Entra Connect, Purview) using GUID
+                and PowerShell, resulting in expedited ticket closures.
+              </li>
+              <li>
+                Reviewed traces and logs containing XML or JSON files to help
+                identify issues and provide resolutions.
+              </li>
+              <li>
+                Accurately documented work through the ticketing system with
+                comprehensive issue tracking and resolution.
+              </li>
+              <li>
+                Identified trends and reported recurring problems, contributing
+                to continuous service improvement.
+              </li>
+              <li>
+                Fostered effective collaboration with engineering teams to
+                enhance customer experience.
+              </li>
+              <li>
+                Managed Microsoft 365 licenses, subscriptions, and user
+                accounts, guaranteeing seamless operations.
+              </li>
+              <li>
+                Shared knowledge and assisted teammates with complex technical
+                issues, fostering a collaborative environment.
+              </li>
+              <li>
+                Strategically planned and executed Organizational Unit (OU)
+                syncing with Microsoft Entra Connect with pass-through
+                authentication, or SSO allowing successful connection with local
+                and cloud directories and security for organizations.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <hr />
+      </div>
+      <div class="container-skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>
+            <h3>Microsoft 365</h3>
+            <ul>
+              <li>IAM with Microsoft 365 and Entra ID</li>
+              <li>Itendity Syncronization</li>
+              <li>Microsoft Purview</li>
+              <li>Microsoft Defender including Defender XDR</li>
+            </ul>
+          </li>
+          <li>
+            <h3>Backend:</h3>
+            <ul>
+              <li>Java OOP</li>
+              <li>Dagger</li>
+              <li>Spring and Spring boot</li>
+              <li>JUnit</li>
+              <li>Mockito</li>
+              <li>Restful API Development</li>
+              <li>Caching</li>
+              <li>Multithreading</li>
+            </ul>
+          </li>
+          <li>
+            <h3>Frontend:</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React.js</li>
+              <li>Axios</li>
+              <li>Bootstrap</li>
+            </ul>
+          </li>
+          <li>
+            <h3>Database:</h3>
+            <ul>
+              <li>DynamoDB</li>
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+            </ul>
+          </li>
+          <li>
+            <h3>Other Skills:</h3>
+            <ul>
+              <li>Algorithm</li>
+              <li>Software Architecture</li>
+              <li>Debugging</li>
+              <li>Git</li>
+              <li>JSON</li>
+              <li>JWT</li>
+              <li>Agile Project Management</li>
+              <li>Team Collaboration</li>
+              <li>Time Management</li>
+            </ul>
+          </li>
+        </ul>
+        <hr />
+      </div>
     </div>
-    <div>
-      <h2>Summary</h2>
-      <p>
-        I am a dedicated and hard workinh individual who is experienced in
-        Microsoft 365, and backend developemnt.
-      </p>
-    </div>
-    <hr />
-    <div>
-      <h2>Education</h2>
-      <ul>
-        <li>
-          <h3>Pen Foster</h3>
-          <ul>
-            <li>Graduate of the Computer Support Technician Program</li>
-            <li>October 2012 -October 2013</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Bloomtech</h3>
-          <ul>
-            <li>Graduate of the Backend Development Program</li>
-            <li>December 2022 - February 2024</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Udemy</h3>
-          <ul>
-            <li>Currently enrolled in Full-Stack Web Developer class</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <hr />
-    <div>
-      <h2>Work Experience</h2>
-      <ul>
-        <li>
-          <h3>Koclat - System Administrator</h3>
-          <h4>October 2023 to present</h4>
-          <ul>
-            <li>
-              Installed and maintained IT infrastructure, ensuring optimal
-              performance and up-to-date security measures.
-            </li>
-            <li>
-              Delivered technical solutions that aligned with organizational
-              goals, improving operational efficiency.
-            </li>
-            <li>
-              Implemented Microsoft 365 across the organization, focusing on
-              identity, access management and security to establish a safe and
-              productive environment.
-            </li>
-            <li>
-              Managed data protection and retention policies to ensure
-              compliance and security across Microsoft 365 applications.
-            </li>
-            <li>
-              Assist in building a Human Resource application for the
-              organization written in Java and React for better employee
-              management.
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h3>Zones - Microsoft Support Engineer (Floorwalker)</h3>
-          <h4>September 2021 to June 2023</h4>
-          <ul>
-            <li>
-              Provided technical leadership and advisement, ensuring an optimal
-              customer experience to Support Engineers
-            </li>
-            <li>
-              Stayed updated on Microsoft 365 technology changes, improving
-              troubleshooting efficiency.
-            </li>
-            <li>
-              Demonstrated expertise in troubleshooting Microsoft 365
-              applications (Exchange, SharePoint, Teams, Microsoft Entra
-              Connect) using GUID and PowerShell, leading to faster ticket
-              resolution.
-            </li>
-            <li>
-              Review traces, console logs source code and other type of logs for
-              troubleshooting bugs and resolving customer issues.
-            </li>
-            <li>
-              Assisted in backlog management, reducing ticket resolution time
-              and improving customer satisfaction.
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h3>Zones - Microsoft Support Engineer</h3>
-          <h4>September 2020 to September 2021</h4>
-          <ul>
-            <li>
-              Delivered exceptional customer service to Microsoft Premier
-              customers, expertly configuring and troubleshooting Microsoft 365
-              security and compliance and applications (Exchange, SharePoint,
-              Teams, Microsoft Entra Connect, Purview) using GUID and
-              PowerShell, resulting in expedited ticket closures.
-            </li>
-            <li>
-              Reviewed traces and logs containing XML or JSON files to help
-              identify issues and provide resolutions.
-            </li>
-            <li>
-              Accurately documented work through the ticketing system with
-              comprehensive issue tracking and resolution.
-            </li>
-            <li>
-              Identified trends and reported recurring problems, contributing to
-              continuous service improvement.
-            </li>
-            <li>
-              Fostered effective collaboration with engineering teams to enhance
-              customer experience.
-            </li>
-            <li>
-              Managed Microsoft 365 licenses, subscriptions, and user accounts,
-              guaranteeing seamless operations.
-            </li>
-            <li>
-              Shared knowledge and assisted teammates with complex technical
-              issues, fostering a collaborative environment.
-            </li>
-            <li>
-              Strategically planned and executed Organizational Unit (OU)
-              syncing with Microsoft Entra Connect with pass-through
-              authentication, or SSO allowing successful connection with local
-              and cloud directories and security for organizations.
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <hr />
-    <div>
-      <h2>Skills</h2>
-      <ul>
-        <li>
-          <h3>Microsoft 365</h3>
-          <ul>
-            <li>IAM with Microsoft 365 and Entra ID</li>
-            <li>Itendity Syncronization</li>
-            <li>Microsoft Purview</li>
-            <li>Microsoft Defender including Defender XDR</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Backend:</h3>
-          <ul>
-            <li>Java OOP</li>
-            <li>Dagger</li>
-            <li>Spring and Spring boot</li>
-            <li>JUnit</li>
-            <li>Mockito</li>
-            <li>Restful API Development</li>
-            <li>Caching</li>
-            <li>Multithreading</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Frontend:</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React.js</li>
-            <li>Axios</li>
-            <li>Bootstrap</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Database:</h3>
-          <ul>
-            <li>DynamoDB</li>
-            <li>PostgreSQL</li>
-            <li>MySQL</li>
-            <li>MongoDB</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Other Skills:</h3>
-          <ul>
-            <li>Algorithm</li>
-            <li>Software Architecture</li>
-            <li>Debugging</li>
-            <li>Git</li>
-            <li>JSON</li>
-            <li>JWT</li>
-            <li>Agile Project Management</li>
-            <li>Team Collaboration</li>
-            <li>Time Management</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <hr />
     <footer>
       <p>© sebjos. All rights reserved.</p>
     </footer>
