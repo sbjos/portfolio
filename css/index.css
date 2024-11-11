@@ -1,10 +1,10 @@
 .container {
   display: grid;
   grid-template-columns: repeat(12, minmax(50px, 188.66px));
-  grid-row-gap: 3px;
+  grid-row-gap: 10px;
   grid-template-areas:
     "aa ab ac ad ae af ag ah ai aj ak al"
-    "ba bb bc bf bf bf bf bf bf bj bk bl"
+    "ba bb bc bd be bf bg bh bi bj bk bl"
     "ca cb cc cd ce cf cg ch ci cj ck cl"
     "da db dc dd de df dg dh di dj dk dl"
     "ea eb ec ed ee ef eg eh ei ej ek el"
@@ -72,10 +72,14 @@
 
   .container-summary {
     grid-column: span 12;
-    background-color: rgba(14, 113, 143, 0.658);
-    box-shadow: 0 2px 6px 0 rgba(0 0, 0, 0.32), inset 0 -1px 0 0 #9dafd3;
     color: var(--text-color-3);
     padding: var(--container-content-padding-1);
+    /* background-color: var(--background-color-1); */
+    box-shadow: 0 2px 6px 0 rgba(0 0, 0, 0.32), inset 0 -1px 0 0 #9dafd3;
+    background-image: url("../file/summary-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     .summary {
       text-align: center;
@@ -87,15 +91,21 @@
 
   .container-experience {
     grid-column: span 12;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: block;
+    /* grid-template-columns: repeat(2, 1fr); */
     padding: var(--container-content-padding-2);
     color: var(--text-color-1);
+    background-color: var(--background-color-2);
 
     .title {
       grid-column: span 2;
       display: flex;
       justify-content: center;
+    }
+
+    .experience-card-container {
+      display: flex;
+      margin-top: 15px;
     }
   }
 
@@ -104,6 +114,8 @@
     grid-template-columns: repeat(2, 1fr);
     padding: var(--container-content-padding-2);
     color: var(--text-color-1);
+    background-color: var(--background-color-5);
+    box-shadow: 0 2px 6px 0 rgba(0 0, 0, 0.32), inset 0 -1px 0 0 #9dafd3;
   }
 
   .container-skills {
