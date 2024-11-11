@@ -11,7 +11,6 @@
     "fa fb fc fd fe ff fg fh fi fj fk fl";
 
   .container-header {
-    grid-area: aa;
     grid-column: span 12;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -19,13 +18,13 @@
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #dadce0;
     height: min-content;
     align-items: center;
+    color: var(--text-color-1);
 
     .header {
       display: inline-flex;
       flex-wrap: nowrap;
       justify-content: flex-start;
       gap: 15px;
-      color: var(--text-color-1);
 
       .name {
         font-size: 1.3em;
@@ -51,8 +50,8 @@
         gap: 15px;
 
         .navigation-item {
-          color: var(--text-color-1);
           text-decoration: none;
+          color: var(--text-color-1);
         }
       }
     }
@@ -62,37 +61,49 @@
       align-items: center;
 
       .button {
-        color: var(--text-color-2);
         text-decoration: none;
         border: 1px solid rgb(71, 70, 70);
         padding: 5px 10px;
         border-radius: 3px;
+        color: var(--text-color-2);
       }
     }
   }
 
   .container-summary {
-    grid-area: ba;
     grid-column: span 12;
     background-color: rgba(14, 113, 143, 0.658);
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #dadce0;
-    
+    box-shadow: 0 2px 6px 0 rgba(0 0, 0, 0.32), inset 0 -1px 0 0 #9dafd3;
+    color: var(--text-color-3);
+    padding: var(--container-content-padding-1);
+
     .summary {
-      color: var(--text-color-3);
       text-align: center;
       line-height: 25px;
       width: 500px;
       margin: auto;
-      padding: 80px 0;
     }
   }
 
   .container-experience {
     grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: var(--container-content-padding-2);
+    color: var(--text-color-1);
+
+    .title {
+      grid-column: span 2;
+      display: flex;
+      justify-content: center;
+    }
   }
 
   .container-education {
-    grid-area: da;
+    grid-column: span 12;
+    grid-template-columns: repeat(2, 1fr);
+    padding: var(--container-content-padding-2);
+    color: var(--text-color-1);
   }
 
   .container-skills {
@@ -101,5 +112,22 @@
 
   footer {
     grid-area: fa;
+  }
+}
+
+.card {
+  padding: 20px 120px;
+  display: block;
+
+  .card-title {
+    font-size: 1.5em;
+  }
+
+  .card-header {
+    min-height: 30px;
+  }
+
+  .card-body {
+    padding-top: 5px;
   }
 }

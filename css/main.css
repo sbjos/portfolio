@@ -29,4 +29,7 @@ body {
   --completed-card-color: #198653;
   --brand-color: #495057;
   --error-color: #b3261e;
+
+  --container-content-padding-1: 55px 150px;
+  --container-content-padding-2: 25px 150px;
 }
