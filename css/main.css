@@ -34,3 +34,7 @@ body {
   --container-content-padding-1: 100px 150px;
   --container-content-padding-2: 35px 150px;
 }
+
+ul {
+  list-style: none;
+}
