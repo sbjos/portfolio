@@ -7,8 +7,7 @@
     "ba bb bc bd be bf bg bh bi bj bk bl"
     "ca cb cc cd ce cf cg ch ci cj ck cl"
     "da db dc dd de df dg dh di dj dk dl"
-    "ea eb ec ed ee ef eg eh ei ej ek el"
-    "fa fb fc fd fe ff fg fh fi fj fk fl";
+    "ea eb ec ed ee ef eg eh ei ej ek el";
 
   .container-header {
     grid-column: span 12;
@@ -103,19 +102,13 @@
     color: var(--text-color-1);
     background-color: var(--background-color-2);
 
-    .title {
-      grid-column: span 2;
-      display: flex;
-      justify-content: center;
-    }
-
     .experience-card-container {
       display: flex;
       margin-top: 15px;
     }
   }
 
-  .container-education {
+  .container-skills {
     grid-column: span 12;
     grid-template-columns: repeat(2, 1fr);
     padding: var(--container-content-padding-2);
@@ -124,11 +117,8 @@
     box-shadow: 0 2px 6px 0 rgba(0 0, 0, 0.32), inset 0 -1px 0 0 #9dafd3;
   }
 
-  .container-skills {
-  }
-
   footer {
-    grid-area: fa;
+    grid-column: span 12;
   }
 }
 
@@ -147,4 +137,10 @@
   .card-body {
     padding-top: 5px;
   }
+}
+
+.title {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
 }
