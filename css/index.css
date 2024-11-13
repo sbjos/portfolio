@@ -1,85 +1,30 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(12, minmax(50px, 188.66px));
+  grid-template-columns: repeat(12, minmax(1px, 188.66px));
   grid-row-gap: 7px;
   grid-template-areas:
     "aa ab ac ad ae af ag ah ai aj ak al"
     "ba bb bc bd be bf bg bh bi bj bk bl"
     "ca cb cc cd ce cf cg ch ci cj ck cl"
     "da db dc dd de df dg dh di dj dk dl";
-    margin: 8px;
+  margin: 8px;
 
-  .container-header {
+  .container-header,
+  .container-header-mobile {
     grid-column: span 12;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 8px 15px;
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #ccccce;
-    height: min-content;
-    align-items: center;
-    color: var(--text-color-1);
-
-    .header {
-      display: inline-flex;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-      gap: 15px;
-
-      .name {
-        font-size: 1.3em;
-        margin: 0;
-      }
-
-      .title {
-        font-size: 1em;
-        padding-top: 5px;
-        margin: 0;
-      }
-    }
-
-    .navigation {
-      display: flex;
-      align-items: center;
-
-      .navigation-items {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-        gap: 15px;
-
-        .navigation-item {
-          text-decoration: none;
-          color: var(--text-color-1);
-        }
-      }
-    }
-    .download-resume-button {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-
-      .button {
-        text-decoration: none;
-        border: 1px solid rgb(71, 70, 70);
-        padding: 5px 10px;
-        border-radius: 3px;
-        color: var(--text-color-2);
-      }
-    }
   }
 
   .container-summary {
     grid-column: span 12;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: minmax(320px, 802px) 1fr;
     color: var(--text-color-3);
     padding: var(--container-content-padding-1);
     box-shadow: 0 2px 6px 0 rgba(0 0, 0, 0.32), inset 0 -1px 0 0 #9dafd3;
     background-image: linear-gradient(
         to left,
         #c9c9c900 30%,
-        rgba(17, 2, 2, 0.993) 70%
+        rgba(0, 0, 0, 0.993) 70%
       ),
       url("../file/summary-background-3.png");
     background-repeat: no-repeat;
@@ -88,21 +33,13 @@
 
     .summary {
       line-height: 25px;
-      width: 600px;
-      padding-left: 100px;
-    }
-  }
+      max-width: 600px;
+      min-width: 1px;
+      margin: auto;
 
-  .container-experience {
-    grid-column: span 12;
-    display: block;
-    padding: var(--container-content-padding-2);
-    color: var(--text-color-1);
-    box-shadow: 0 2px 6px 0 rgba(0 0, 0, 0.32), inset 0 -1px 0 0 #9dafd3;
-    background-color: var(--background-color-2);
-
-    .experience-card-container {
-      display: flex;
+      .paragraph {
+        font-size: 1rem;
+      }
     }
   }
 
@@ -116,7 +53,7 @@
 
     .skills {
       display: grid;
-      grid-template-columns: repeat(4, .2fr);
+      grid-template-columns: repeat(4, minmax(100px, 250px));
       grid-gap: 50px;
 
       .skill {
@@ -137,31 +74,93 @@
       }
     }
   }
-}
 
-.card {
-  padding: 20px 120px;
-  display: block;
+  .container-experience {
+    grid-column: span 12;
+    display: block;
+    padding: var(--container-content-padding-2);
+    color: var(--text-color-1);
+    box-shadow: 0 2px 6px 0 rgba(0 0, 0, 0.32), inset 0 -1px 0 0 #9dafd3;
+    background-color: var(--background-color-2);
 
-  .card-title {
-    font-size: 1.5em;
+    .card-container {
+      display: grid;
+      grid-template-columns: minmax(100px, 700px) 50px minmax(100px, 700px);
+    }
+
+    .separation-line {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 25px 0 15px;
+
+      hr {
+        min-height: 100%;
+        width: 0;
+      }
+    }
   }
 
-  .card-header {
-    padding-top: 3px;
+  .card {
+    display: block;
+    padding: 10px 50px;
+
+    .card-body {
+      padding-top: 3px;
+    }
   }
 
-  .card-body {
-    padding-top: 3px;
+  .title {
+    grid-column: span 2;
+    margin-bottom: 35px;
+
+    h1 {
+      text-align: center;
+    }
+  }
+
+  .paragraph {
+    padding-top: 20px;
   }
 }
 
-.title {
-  grid-column: span 2;
-  display: flex;
-  justify-content: center;
+@media screen and (max-width: 1024px) {
+  .container-summary {
+    padding-left: 55px !important;
+    padding-right: 55px !important;
+  }
 }
 
-.homepage {
-  grid-column: span 12;
+@media screen and (max-width: 768px) {
+  .container-summary {
+    display: flex !important;
+    justify-content: center;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .container-skills {
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(100px, 250px)) !important;
+      grid-gap: 20px !important;
+    }
+  }
+
+  .container-experience {
+    .card-container {
+      display: block !important;
+    }
+
+    .separation-line {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 25px 0 15px;
+
+      hr {
+        min-width: 80%;
+      }
+    }
+  }
 }

@@ -1,0 +1,15 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(50px, 188.66px));
+  grid-row-gap: 7px;
+  grid-template-areas:
+    "aa ab ac ad ae af ag ah ai aj ak al"
+    "ba bb bc bd be bf bg bh bi bj bk bl"
+    "ca cb cc cd ce cf cg ch ci cj ck cl"
+    "da db dc dd de df dg dh di dj dk dl";
+  margin: 8px;
+
+  .container-header {
+    grid-column: span 12;
+  }
+}

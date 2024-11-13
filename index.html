@@ -12,17 +12,28 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
   </head>
   <body>
     <div class="container">
-      <div class="container-header">
-        <div class="header">
-          <div class="name">Sebastien Joseph</div>
-          <div class="title">Software Developer</div>
+      <header class="container-header">
+        <div class="header-logo">
+          <div class="name">
+            <a class="name-link" href="./index.html">Sebastien Joseph</a>
+          </div>
+          <div class="header-title">
+            <h4 class="title-1">Software Developer</h4>
+          </div>
         </div>
         <div class="navigation">
           <nav class="navigation-items">
+            <a class="navigation-item home" href="./index.html">Home</a>
             <a href="" class="navigation-item skill">Skill</a>
             <a href="./experience.html" class="navigation-item experience"
               >Experience</a
@@ -44,7 +55,43 @@
             >DOWNLOAD RESUME
           </a>
         </div>
-      </div>
+      </header>
+
+      <!-- monile -->
+      <header class="container-header-mobile">
+        <div class="header-logo">
+          <div class="name">
+            <a class="name-link" href="./index.html">Sebastien Joseph</a>
+          </div>
+          <div class="header-title">
+            <h4 class="title-1">Software Developer</h4>
+          </div>
+        </div>
+        <div class="navigation">
+          <nav class="navigation-items">
+            <a class="navigation-item home" href="./index.html">Home</a>
+            <a href="" class="navigation-item skill">Skill</a>
+            <a href="./experience.html" class="navigation-item experience"
+              >Experience</a
+            >
+            <a href="./portfolio.html" class="navigation-item portfolio"
+              >Portfolio</a
+            >
+            <a href="./contact.html" class="navigation-item contact">Contact</a>
+          </nav>
+        </div>
+        <div class="download-resume-button">
+          <a
+            data-testid="linkElement"
+            href="./file/Resume - Sebastien Joseph.pdf"
+            download
+            target="_blank"
+            class="button"
+            aria-disabled="false"
+            >DOWNLOAD RESUME
+          </a>
+        </div>
+      </header>
       <div class="container-summary">
         <div class="summary">
           <p class="paragraph">
@@ -64,53 +111,9 @@
           </p>
         </div>
       </div>
-      <div class="container-experience">
-        <div class="title">
-          <h1>MOST RECENT EXPERIENCE</h1>
-        </div>
-        <div class="experience-card-container">
-          <div class="experience-1 card">
-            <div class="experience-1-title card-title">Koclat</div>
-            <div class="experience-1-timeline">From 2023 to present</div>
-            <div class="experience-1-header card-header">
-              <p class="paragraph-header paragraph">
-                Koclat is a non profit organisaton that help Haïtian children
-                with food, clothing and schooling.
-              </p>
-            </div>
-            <div class="experience-1-body card-body">
-              <p class="paragraph-body paragraph">
-                Managed the Microsoft 365 cloud infrastructure, providing IT
-                support with a focus on Identity and Access Management (IAM),
-                compliance, data integrity and email security to ensure a secure
-                and efficient environment.
-              </p>
-            </div>
-          </div>
-          <hr class="separation-line experience-separation-line" />
-          <div class="experience-2 card">
-            <div class="experience-2-title card-title">Zones</div>
-            <div class="experience-2-timeline">From 2020 to 2023</div>
-            <div class="experience-2-header card-header">
-              <p class="paragraph-header paragraph">
-                Zones is an IT company that provides IT services, solutions and
-                management tools.
-              </p>
-            </div>
-            <div class="experience-2-body card-body">
-              <p class="paragraph-body paragraph">
-                Served as a Microsoft Support Engineer in the premier program,
-                assisting Fortune 500 companies with the Microsoft 365 platform,
-                providing support for Exchange, SharePoint, Teams, and other
-                services within the suite.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="container-skills">
         <div class="title">
-          <h1>Skills</h1>
+          <h1>SKILLS</h1>
         </div>
         <div class="skills">
           <div class="skill-ms skill">
@@ -185,8 +188,58 @@
           </div>
         </div>
       </div>
+      <div class="container-experience">
+        <div class="title">
+          <h1>MOST RECENT EXPERIENCE</h1>
+        </div>
+        <div class="experience-card-container card-container">
+          <div class="experience-1 card">
+            <div class="experience-1-title card-title">
+              <h2 class="card-title-1">Koclat</h2>
+              <h4 class="card-title-2">From 2023 to present</h4>
+            </div>
+            <div class="experience-1-header card-header">
+              <p class="paragraph-header paragraph">
+                Koclat is a non profit organisaton that help Haïtian children
+                with food, clothing and schooling.
+              </p>
+            </div>
+            <div class="experience-1-body card-body">
+              <p class="paragraph-body paragraph">
+                Managed the Microsoft 365 cloud infrastructure, providing IT
+                support with a focus on Identity and Access Management (IAM),
+                compliance, data integrity and email security to ensure a secure
+                and efficient environment.
+              </p>
+            </div>
+          </div>
+          <div class="experience-separation-line separation-line">
+            <hr />
+          </div>
+          <div class="experience-2 card">
+            <div class="experience-2-title card-title">
+              <h2 class="card-title-1">Zones</h2>
+              <h4 class="card-title-2">From 2020 to 2023</h4>
+            </div>
+            <div class="experience-2-header card-header">
+              <p class="paragraph-header paragraph">
+                Zones is an IT company that provides IT services, solutions and
+                management tools.
+              </p>
+            </div>
+            <div class="experience-2-body card-body">
+              <p class="paragraph-body paragraph">
+                Served as a Microsoft Support Engineer in the premier program,
+                assisting Fortune 500 companies with the Microsoft 365 platform,
+                providing support for Exchange, SharePoint, Teams, and other
+                services within the suite.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <footer class="homepage">
+    <footer class="container-footer">
       <p>© sebjos. All rights reserved.</p>
     </footer>
   </body>
