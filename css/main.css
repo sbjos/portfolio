@@ -24,7 +24,7 @@ body {
   --background-color-4: #ebf3fa;
   --background-color-5: #f3f2ef;
   --background-color-6: #2b2929;
-  --background-color-7: #313131;;
+  --background-color-7: #313131;
   --button-link-color: #054a76;
   --button-link-color-hover: #1662d4;
   --button-color-blue: #0050c7;
@@ -43,6 +43,32 @@ body {
   --container-content-padding-1: 100px 150px;
   --container-content-padding-2: 55px 50px;
   --footer-padding: 0 100px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(1px, 188.66px));
+  grid-row-gap: 7px;
+  grid-template-areas:
+    "aa ab ac ad ae af ag ah ai aj ak al"
+    "ba bb bc bd be bf bg bh bi bj bk bl"
+    "ca cb cc cd ce cf cg ch ci cj ck cl"
+    "da db dc dd de df dg dh di dj dk dl";
+  margin: 8px;
+
+  .container-header,
+  .container-header-mobile {
+    grid-column: span 12;
+  }
+}
+
+.title {
+  grid-column: span 2;
+  margin-bottom: 35px;
+
+  h1 {
+    text-align: center;
+  }
 }
 
 ul {

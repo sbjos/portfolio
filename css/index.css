@@ -1,103 +1,86 @@
-.container {
+.container-summary {
+  grid-column: span 12;
   display: grid;
-  grid-template-columns: repeat(12, minmax(1px, 188.66px));
-  grid-row-gap: 7px;
-  grid-template-areas:
-    "aa ab ac ad ae af ag ah ai aj ak al"
-    "ba bb bc bd be bf bg bh bi bj bk bl"
-    "ca cb cc cd ce cf cg ch ci cj ck cl"
-    "da db dc dd de df dg dh di dj dk dl";
-  margin: 8px;
+  grid-template-columns: minmax(320px, 802px) 1fr;
+  color: var(--text-color-3);
+  padding: var(--container-content-padding-1);
+  box-shadow: 0 2px 6px 0 rgba(0 0, 0, 0.32), inset 0 -1px 0 0 #9dafd3;
+  background-image: linear-gradient(
+      to left,
+      #c9c9c900 30%,
+      rgba(0, 0, 0, 0.993) 70%
+    ),
+    url("../file/summary-background-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
-  .container-header,
-  .container-header-mobile {
-    grid-column: span 12;
+  .summary {
+    line-height: 25px;
+    max-width: 600px;
+    min-width: 1px;
+    margin: auto;
+
+    .paragraph {
+      font-size: 1rem;
+    }
   }
+}
 
-  .container-summary {
-    grid-column: span 12;
+.container-skills {
+  grid-column: span 12;
+  display: block;
+  padding: var(--container-content-padding-2);
+  color: var(--text-color-1);
+  background-color: var(--background-color-3);
+  box-shadow: 0 2px 6px 0 rgba(0 0, 0, 0.32), inset 0 -1px 0 0 #9dafd3;
+
+  .skills {
     display: grid;
-    grid-template-columns: minmax(320px, 802px) 1fr;
-    color: var(--text-color-3);
-    padding: var(--container-content-padding-1);
-    box-shadow: 0 2px 6px 0 rgba(0 0, 0, 0.32), inset 0 -1px 0 0 #9dafd3;
-    background-image: linear-gradient(
-        to left,
-        #c9c9c900 30%,
-        rgba(0, 0, 0, 0.993) 70%
-      ),
-      url("../file/summary-background-3.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    grid-template-columns: repeat(4, minmax(100px, 250px));
+    grid-gap: 50px;
 
-    .summary {
-      line-height: 25px;
-      max-width: 600px;
-      min-width: 1px;
-      margin: auto;
+    .skill {
+      display: block;
+      margin: 0 auto;
 
-      .paragraph {
-        font-size: 1rem;
+      .skill-header > h3 {
+        display: flex;
+        justify-content: flex-start;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+
+      .skill-body > ul {
+        margin-top: 0;
+        padding-left: 0;
       }
     }
   }
+}
 
-  .container-skills {
-    grid-column: span 12;
-    display: block;
-    padding: var(--container-content-padding-2);
-    color: var(--text-color-1);
-    background-color: var(--background-color-3);
-    box-shadow: 0 2px 6px 0 rgba(0 0, 0, 0.32), inset 0 -1px 0 0 #9dafd3;
+.container-experience {
+  grid-column: span 12;
+  display: block;
+  padding: var(--container-content-padding-2);
+  color: var(--text-color-1);
+  box-shadow: 0 2px 6px 0 rgba(0 0, 0, 0.32), inset 0 -1px 0 0 #9dafd3;
+  background-color: var(--background-color-2);
 
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(100px, 250px));
-      grid-gap: 50px;
-
-      .skill {
-        display: block;
-        margin: 0 auto;
-
-        .skill-header > h3 {
-          display: flex;
-          justify-content: flex-start;
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        .skill-body > ul {
-          margin-top: 0;
-          padding-left: 0;
-        }
-      }
-    }
+  .card-container {
+    display: grid;
+    grid-template-columns: minmax(100px, 700px) 50px minmax(100px, 700px);
   }
 
-  .container-experience {
-    grid-column: span 12;
-    display: block;
-    padding: var(--container-content-padding-2);
-    color: var(--text-color-1);
-    box-shadow: 0 2px 6px 0 rgba(0 0, 0, 0.32), inset 0 -1px 0 0 #9dafd3;
-    background-color: var(--background-color-2);
+  .separation-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0 15px;
 
-    .card-container {
-      display: grid;
-      grid-template-columns: minmax(100px, 700px) 50px minmax(100px, 700px);
-    }
-
-    .separation-line {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 25px 0 15px;
-
-      hr {
-        min-height: 100%;
-        width: 0;
-      }
+    hr {
+      min-height: 100%;
+      width: 0;
     }
   }
 
@@ -109,16 +92,7 @@
       padding-top: 3px;
     }
   }
-
-  .title {
-    grid-column: span 2;
-    margin-bottom: 35px;
-
-    h1 {
-      text-align: center;
-    }
-  }
-
+  
   .paragraph {
     padding-top: 20px;
   }

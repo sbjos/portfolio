@@ -1,0 +1,13 @@
+.container-project {
+  grid-column: span 12;
+
+  .experience-timeline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .summary-container {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
