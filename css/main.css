@@ -42,7 +42,8 @@ body {
   --error-color: #b3261e;
 
   --container-content-padding-1: 100px 150px;
-  --container-content-padding-2: 55px 450px;
+  /* --container-content-padding-2: 55px 350px; */
+  --container-content-padding-2: 55px 0;
   --container-content-padding-3: 55px 50px;
   --footer-padding: 0 100px;
 }
@@ -51,11 +52,11 @@ body {
   display: grid;
   grid-template-columns: repeat(12, minmax(1px, 188.66px));
   grid-row-gap: 7px;
-  grid-template-areas:
+  /* grid-template-areas:
     "aa ab ac ad ae af ag ah ai aj ak al"
     "ba bb bc bd be bf bg bh bi bj bk bl"
     "ca cb cc cd ce cf cg ch ci cj ck cl"
-    "da db dc dd de df dg dh di dj dk dl";
+    "da db dc dd de df dg dh di dj dk dl"; */
   margin: 8px;
 
   .container-header,

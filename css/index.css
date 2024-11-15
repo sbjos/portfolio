@@ -1,5 +1,13 @@
 .home {
-  text-decoration: underline !important;
+  text-underline-offset: 3px;
+  background: linear-gradient(
+    to right,
+    rgba(100, 200, 200, 1),
+    rgba(100, 200, 200, 1)
+  ) !important;
+  background-size: 100% 0.1em, 0 0.1em !important;
+  background-position: 100% 100%, 0 100% !important;
+  background-repeat: no-repeat !important;
 }
 
 .container-summary {
@@ -41,13 +49,15 @@
   box-shadow: 0 2px 6px 0 rgba(0 0, 0, 0.32), inset 0 -1px 0 0 #9dafd3;
 
   .skills {
+    margin: auto;
+    max-width: 1150px;
     display: grid;
-    grid-template-columns: repeat(5, minmax(100px, 200px));
-    /* grid-template-columns: repeat(5, 1fr); */
-    grid-gap: 50px;
+    grid-template-columns: repeat(5, max-content);
+    grid-gap: 80px;
 
     .skill {
       display: block;
+      white-space: nowrap;
 
       .skill-header > h3 {
         display: flex;
@@ -74,6 +84,8 @@
   background-color: var(--background-color-2);
 
   .card-container {
+    margin: auto;
+    max-width: 1150px;
     display: grid;
     grid-template-columns: minmax(100px, 700px) 50px minmax(100px, 700px);
     grid-gap: 30px;
@@ -88,20 +100,30 @@
     hr {
       min-height: 100%;
       width: 0;
+      border: none;
+      border-left: 1px solid var(--text-color-2);
     }
   }
+}
 
-  .card {
-    display: block;
-    padding: 10px 10px;
+.card {
+  display: block;
+  padding: 10px 20px;
 
-    .card-body {
-      padding-top: 3px;
-    }
+  .card-body {
+    padding-top: 3px;
   }
+}
 
-  .paragraph {
-    padding-top: 20px;
+.paragraph {
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 1190px) {
+  .container-skills {
+    .skills {
+      grid-template-columns: repeat(4, max-content) !important;
+    }
   }
 }
 
@@ -112,7 +134,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 880px) {
   .container-summary {
     display: flex !important;
     justify-content: center;
@@ -122,9 +144,8 @@
 
   .container-skills {
     .skills {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(100px, 250px)) !important;
-      grid-gap: 20px !important;
+      grid-template-columns: repeat(3, max-content) !important;
+      grid-gap: 50px;
     }
   }
 
@@ -141,7 +162,18 @@
 
       hr {
         min-width: 80%;
+        border: none;
+        border-top: 1px solid var(--text-color-2);
       }
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .container-skills {
+    .skills {
+      grid-template-columns: repeat(2, max-content) !important;
+      grid-gap: 40px;
     }
   }
 }
@@ -149,7 +181,7 @@
 @media screen and (max-width: 480px) {
   .container-skills {
     .skills {
-      grid-template-columns: repeat(1, minmax(100px, 250px)) !important;
+      grid-template-columns: repeat(1, max-content) !important;
     }
   }
 }
