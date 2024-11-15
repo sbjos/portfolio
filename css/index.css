@@ -1,3 +1,7 @@
+.home {
+  text-decoration: underline !important;
+}
+
 .container-summary {
   grid-column: span 12;
   display: grid;
@@ -23,6 +27,7 @@
 
     .paragraph {
       font-size: 1rem;
+      margin: 15px;
     }
   }
 }
@@ -37,16 +42,17 @@
 
   .skills {
     display: grid;
-    grid-template-columns: repeat(4, minmax(100px, 250px));
+    grid-template-columns: repeat(5, minmax(100px, 200px));
+    /* grid-template-columns: repeat(5, 1fr); */
     grid-gap: 50px;
 
     .skill {
       display: block;
-      margin: 0 auto;
 
       .skill-header > h3 {
         display: flex;
         justify-content: flex-start;
+        font-size: 1.25em;
         font-weight: 500;
         margin-bottom: 5px;
       }
@@ -70,6 +76,7 @@
   .card-container {
     display: grid;
     grid-template-columns: minmax(100px, 700px) 50px minmax(100px, 700px);
+    grid-gap: 30px;
   }
 
   .separation-line {
@@ -86,13 +93,13 @@
 
   .card {
     display: block;
-    padding: 10px 50px;
+    padding: 10px 10px;
 
     .card-body {
       padding-top: 3px;
     }
   }
-  
+
   .paragraph {
     padding-top: 20px;
   }
@@ -123,7 +130,7 @@
 
   .container-experience {
     .card-container {
-      display: block !important;
+      grid-template-columns: minmax(100px, 700px);
     }
 
     .separation-line {
@@ -135,6 +142,14 @@
       hr {
         min-width: 80%;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container-skills {
+    .skills {
+      grid-template-columns: repeat(1, minmax(100px, 250px)) !important;
     }
   }
 }
