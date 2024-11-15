@@ -55,11 +55,10 @@
     grid-template-columns: repeat(5, max-content);
     grid-gap: 80px;
 
-    .skill {
-      display: block;
+    .card {
       white-space: nowrap;
 
-      .skill-header > h3 {
+      .card-title-2 {
         display: flex;
         justify-content: flex-start;
         font-size: 1.25em;
@@ -67,7 +66,7 @@
         margin-bottom: 5px;
       }
 
-      .skill-body > ul {
+      .card-body > ul {
         margin-top: 0;
         padding-left: 0;
       }
@@ -117,6 +116,18 @@
 
 .paragraph {
   padding-top: 20px;
+}
+
+.title {
+  width: max-content;
+  margin: 0 auto 20px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  /* text-decoration-color: var(--underline-color-2); */
+
+  .title-text {
+    font-weight: 400 !important;
+  }
 }
 
 @media screen and (max-width: 1190px) {
