@@ -25,6 +25,7 @@ body {
   --background-color-5: #f3f2ef;
   --background-color-6: #2b2929;
   --background-color-7: #313131;
+  --background-color-8: #252121;
   --button-link-color: #054a76;
   --button-link-color-hover: #1662d4;
   --button-color-blue: #0050c7;
@@ -44,7 +45,8 @@ body {
 
   --container-content-padding-1: 100px 150px;
   --container-content-padding-2: 65px 0;
-  --container-content-padding-3: 55px 50px;
+  --container-content-padding-3: 45px 150px;
+  --card-content-padding-1: 8px;
   --footer-padding: 0 100px;
 }
 
