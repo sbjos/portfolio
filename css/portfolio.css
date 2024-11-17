@@ -11,35 +11,8 @@
 }
 
 .container-summary {
-  grid-column: span 12;
-  height: 150px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: flex-end;
   color: var(--text-color-4);
-  padding: var(--container-content-padding-3);
-  box-shadow: var(--box-shadow-container);
-  background-image: linear-gradient(to left, #f7f3f3b9 80%, #f7f3f3b9 20%),
-    url("../file/summary-background-4.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  .summary {
-    line-height: 25px;
-    min-width: 1px;
-    display: block;
-
-    .paragraph-1 {
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
-      display: flex;
-      justify-content: flex-start;
-      font-size: 3rem;
-      margin-bottom: 25px;
-    }
-  }
+  background-image: linear-gradient(to right, #dae7f88e 40%, #000000b9);
 }
 
 .container-project {
@@ -49,10 +22,10 @@
   grid-gap: 50px;
   padding: var(--container-content-padding-3);
   box-shadow: var(--box-shadow-container);
+  border-radius: var(--border-radius-container);
 }
 
 .card {
-  /* height: 572px; */
   padding: var(--card-content-padding-1);
   background-color: var(--background-color-3);
   border-radius: 8px;
@@ -86,47 +59,56 @@
 
     .card-body {
       .card-dody-def-1 {
-        font-size: 1.2em;
-        font-weight: 500;
-        min-height: 58px;
-      }
-
-      .card-dody-def-2 {
-        min-height: 42px;
-      }
-
-      .card-dody-def-3 {
-        min-height: 90px;
-      }
-
-      .paragraph {
+        min-height: 52px;
         margin-bottom: 20px;
 
-        .leadfxcg {
+        p {
+          font-size: 1.1em;
           font-weight: 500;
         }
       }
 
+      .card-dody-def-2 {
+        margin-bottom: 20px;
+      }
+
       .card-dody-def-3 {
+        min-height: 90px;
+        display: block;
+        margin-bottom: 30px;
+
         h4 {
+          font-size: 0.95em;
           font-weight: 600;
-          margin-bottom: 2px;
+          margin: 10px 0 0;
         }
-        p {
-          padding: 0 0 0 10px;
+
+        .techstack-1,
+        .techstack-2 {
+          display: flex;
+          justify-content: flex-start;
+          padding-left: 15px;
+          gap: 10px;
+
+          .tech-uriosa-mobile {
+            display: none;
+          }
+
+          .leadfxcg {
+            font-weight: 500;
+          }
         }
       }
 
       .btn-container {
-        margin: 8px 0 18px;
+        margin-bottom: 15px;
         display: flex;
+        flex-wrap: nowrap;
         justify-content: flex-start;
-        align-items: center;
         min-width: max-content;
 
         .btn {
           width: max-content;
-          text-wrap: nowrap;
           display: flex;
           justify-content: center;
           text-decoration: none;
@@ -148,21 +130,35 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .container-summary {
-    padding: 45px;
-    justify-content: center !important;
-    align-content: center !important;
-    padding: 25px 0 15px;
+@media screen and (max-width: 320px) {
+  .tech-uriosa {
+    display: none;
+  }
 
-    .trdd787 {
-      padding: 0 !important;
-      justify-content: center !important;
-      align-items: center !important;
-    }
+  .card {
+    .card-body {
+      display: block;
 
-    .r9fnwro {
-      display: none;
+      .card-dody-def-3 {
+        .techstack-1,
+        .techstack-2 {
+          display: block !important;
+
+          .tech-uriosa-mobile {
+            display: block !important;
+            margin-bottom: 15px;
+
+            ul {
+              padding-left: 15px !important;
+            }
+          }
+        }
+      }
+
+      .btn-container {
+        align-items: center !important;
+        justify-content: center !important;
+      }
     }
   }
 }

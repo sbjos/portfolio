@@ -3,36 +3,155 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Resume</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <script
+      src="https://kit.fontawesome.com/14ad098f7a.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="container-summary">
-      <div class="summary">
-        <p class="paragraph">
-          Joined BloomTech's backend development program, where I learned
-          Java OOP, algorithms, APIs, threading, and more. I gained hands-on
-          experience with real-world projects, including debugging, unit
-          testing, and Agile methodologies.
-        </p>
-        <p class="paragraph">
-          Driven by curiosity, I expanded my skills to include front-end
-          technologies like JavaScript, HTML, CSS, and React.js. My
-          experience at BloomTech has equipped me with the knowledge and
-          adaptability needed to succeed as a software developer.
-        </p>
-        <p class="paragraph">
-          This page features a list of projects I’ve created, which will be
-          updated regularly as new projects become available.
-        </p>
+    <div class="container">
+      <header class="container-header">
+        <div class="header-logo">
+          <div class="name">
+            <h3>Sebastien Joseph</h3>
+          </div>
+          <div class="header-title">
+            <h4 class="title-1">Software Developer</h4>
+          </div>
+        </div>
+        <div class="navigation">
+          <nav class="navigation-items">
+            <a class="navigation-item home" href="./index.html">Home</a>
+            <a href="./portfolio.html" class="navigation-item portfolio"
+              >Portfolio</a
+            >
+            <a href="./contact.html" class="navigation-item contact">Contact</a>
+          </nav>
+        </div>
+        <div class="download-resume-btn">
+          <a
+            data-testid="linkElement"
+            href="./file/Resume - Sebastien Joseph.pdf"
+            download
+            target="_blank"
+            class="btn"
+            aria-disabled="false"
+            >DOWNLOAD RESUME
+          </a>
+        </div>
+      </header>
+
+      <!-- mobile -->
+      <header class="container-header-mobile">
+        <div class="header-logo">
+          <div class="name">
+            <h3>Sebastien Joseph</h3>
+          </div>
+          <div class="header-title">
+            <h4 class="title-1">Software Developer</h4>
+          </div>
+        </div>
+        <div class="navigation">
+          <nav class="navigation-items">
+            <a class="navigation-item home" href="./index.html">Home</a>
+            <a href="./portfolio.html" class="navigation-item portfolio"
+              >Portfolio</a
+            >
+            <a href="./contact.html" class="navigation-item contact">Contact</a>
+          </nav>
+        </div>
+        <div class="download-resume-btn">
+          <a
+            data-testid="linkElement"
+            href="./file/Resume - Sebastien Joseph.pdf"
+            download
+            target="_blank"
+            class="btn"
+            aria-disabled="false"
+            >DOWNLOAD RESUME
+          </a>
+        </div>
+      </header>
+      <div class="container-summary">
+        <div class="summary">
+          <h1 class="title-banner trdd787">Contact me</h1>
+          <p class="paragraph-banner r9fnwro">
+            Have questions, requests or want to learn more about the services we
+            offer? Feel free to reach out!
+          </p>
+          <p class="paragraph-2 r9fnwro"></p>
+        </div>
       </div>
-    </div>
-    <div>
-      <h1>Contact Information</h1>
-      <ul>
-        <li>Central Fl, USA</li>
-        <li>+1 407 480 1344</li>
-        <li>sebjos07@gmail.com</li>
-      </ul>
+      <div class="container-contactinfo">
+        <div class="contactinfo-summary">
+          <div class="title">
+            <h1 class="title-text">Want to connect with me?</h1>
+          </div>
+          <div class="contact-method">
+            <div class="contact-card card">
+              <div class="card-title">
+                <h2 class="card-title-1"></h2>
+                <h3 class="card-title-2"></h3>
+                <h4 class="card-title-3">Get in touch</h4>
+              </div>
+              <div class="card-body">
+                <div class="card-body-def-1">
+                  <div class="location">
+                    <div class="location-pin-icon">
+                      <i class="fa-sharp fa-solid fa-location-dot fa-2xl"></i>
+                    </div>
+                    <p>Central Fl, USA</p>
+                  </div>
+                </div>
+                <div class="card-body-def-2">
+                  <div class="contact-phone">
+                    <div class="phone-icon">
+                      <i class="fa-solid fa-phone fa-2xl"></i>
+                    </div>
+                    <p>By phone:</p>
+                    <p>+1 234 567 8901</p>
+                  </div>
+                </div>
+                <div class="card-body-def-3">
+                  <div class="contact-email">
+                    <div class="email-icon">
+                      <i class="fa-solid fa-envelope fa-2xl"></i>
+                    </div>
+                    <p>By email:</p>
+                    <p>username@domain.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contact-form card">
+              <div class="card-title">
+                <h2 class="card-title-1"></h2>
+                <p class="card-title-2">Contact Information</p>
+                <h4 class="card-title-3"></h4>
+              </div>
+              <div class="card-body">
+                <ul>
+                  <li>Central Fl, USA</li>
+                  <li>+1 234 567 8901</li>
+                  <li>username@domain.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
