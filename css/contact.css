@@ -35,12 +35,13 @@
 
     .contact-card {
       display: grid;
-      grid-template-columns: repeat(12, max-content);
+      grid-template-columns: repeat(12, minmax(1px, 20px));
       grid-template-rows: repeat(6, minmax(60px, max-content));
       grid-column-gap: 15px;
 
       .card-title {
         grid-column-start: 2;
+        grid-column-end: 5;
         grid-row-start: 2;
         height: max-content;
 
@@ -112,6 +113,11 @@
             font-weight: 600;
             display: flex;
             justify-content: flex-start;
+
+            .para2 {
+                font-weight: 500;
+                color: var(--button-link-color);
+              }
           }
         }
 
