@@ -11,10 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/form.css" />
     <script
       src="https://kit.fontawesome.com/14ad098f7a.js"
       crossorigin="anonymous"
@@ -97,7 +99,7 @@
       <div class="container-contactinfo">
         <div class="contactinfo-summary">
           <div class="title">
-            <h1 class="title-text">Want to connect with me?</h1>
+            <h1 class="title-text">Want to connect?</h1>
           </div>
           <div class="contact-method">
             <div class="contact-card card">
@@ -108,46 +110,125 @@
               </div>
               <div class="card-body">
                 <div class="card-body-def-1">
-                  <div class="location">
-                    <div class="location-pin-icon">
-                      <i class="fa-sharp fa-solid fa-location-dot fa-2xl"></i>
-                    </div>
-                    <p>Central Fl, USA</p>
+                  <div class="name-and-title">
+                    <h2 class="para1">Sebastien Joseph</h2>
+                    <p class="para2">Software Developer</p>
                   </div>
                 </div>
                 <div class="card-body-def-2">
-                  <div class="contact-phone">
-                    <div class="phone-icon">
-                      <i class="fa-solid fa-phone fa-2xl"></i>
-                    </div>
-                    <p>By phone:</p>
-                    <p>+1 234 567 8901</p>
+                  <div class="location">
+                    <p class="para1">Central Fl, USA</p>
                   </div>
                 </div>
+                <hr class="separation-line" />
                 <div class="card-body-def-3">
+                  <div class="contact-phone">
+                    <p class="para1">Phone:</p>
+                    <p class="para2">+1 (234) 567 8901</p>
+                  </div>
+                </div>
+                <div class="card-body-def-4">
                   <div class="contact-email">
-                    <div class="email-icon">
-                      <i class="fa-solid fa-envelope fa-2xl"></i>
+                    <div class="rhftor">
+                      <p class="para1">Email:</p>
+                      <p class="para2">
+                        <a href="mailto: username@domain.com" target="_blank"
+                          >username@domain.com</a
+                        >
+                      </p>
                     </div>
-                    <p>By email:</p>
-                    <p>username@domain.com</p>
+                  </div>
+                </div>
+                <div class="card-body-def-5">
+                  <div class="contact-social">
+                    <div class="rhftor">
+                      <div class="icon"></div>
+                      <p class="para1">
+                        <a href="https://www.linkedin.com/in/sebastienjjoseph"
+                          >LinkedIn</a
+                        >
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="contact-form card">
-              <div class="card-title">
-                <h2 class="card-title-1"></h2>
-                <p class="card-title-2">Contact Information</p>
-                <h4 class="card-title-3"></h4>
+            <div class="contact-form-card card">
+              <div class="form-header-container">
+                <h2 class="form-header">I'd love to hear from you</h2>
               </div>
-              <div class="card-body">
-                <ul>
-                  <li>Central Fl, USA</li>
-                  <li>+1 234 567 8901</li>
-                  <li>username@domain.com</li>
-                </ul>
-              </div>
+              <form class="contact-form form">
+                <div class="col-form col-form-6">
+                  <label for="validationFirstName" class="form-label"
+                    >First name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationFirstName"
+                    required
+                  />
+                </div>
+                <div class="col-form col-form-6">
+                  <label for="validationLastName" class="form-label"
+                    >Last name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationLastName"
+                    required
+                  />
+                </div>
+                <div class="col-form col-form-12">
+                  <label for="validationPhone" class="form-label">Phone</label>
+
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="validationPhone"
+                    required
+                  />
+                </div>
+                <div class="col-form col-form-12">
+                  <label for="validationEmailAddress" class="form-label"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="validationEmailAddress"
+                    required
+                  />
+                </div>
+                <div class="col-form col-form-12">
+                  <label for="validationEmailSubject" class="form-label"
+                    >Subject</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationEmailSubject"
+                    required
+                  />
+                </div>
+                <div class="col-form col-form-12">
+                  <label for="validationMessage" class="form-label"
+                    >Message</label
+                  >
+                  <textarea
+                    name="message"
+                    type="text"
+                    class="form-control"
+                    id="validationMessage"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <div class="col-form col-form-12">
+                  <button class="btn" type="submit">Submit form</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
