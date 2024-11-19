@@ -1,0 +1,153 @@
+.container-header-mobile {
+  display: none;
+}
+
+.container-header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 8px 15px;
+  align-items: center;
+  box-shadow: var(--box-shadow-container);
+  color: var(--text-color-1);
+  border-radius: var(--border-radius-container);
+}
+
+.header-logo {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 15px;
+
+  .name {
+    width: max-content;
+    display: flex;
+    align-items: center;
+
+    h3 {
+      font-weight: 600;
+    }
+  }
+
+  .header-title {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding-top: 1px;
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+
+  .navigation-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 25px;
+  }
+}
+
+.navigation-item {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text-color-1);
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255),
+      rgba(255, 255, 255)
+    ),
+    linear-gradient(to right, rgb(179, 0, 0), rgb(179, 0, 0));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.navigation-item:hover,
+.navigation-item:focus {
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255),
+      rgba(255, 255, 255)
+    ),
+    linear-gradient(to right, rgb(179, 0, 0), rgb(179, 0, 0));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
+.download-resume-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: max-content;
+
+  .btn {
+    text-decoration: none;
+    border: 1px solid rgb(71, 70, 70);
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: var(--background-color-8);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container-header {
+    display: none;
+  }
+
+  .container-header-mobile {
+    display: block;
+    padding: 8px;
+    align-items: center;
+    box-shadow: var(--box-shadow-container);
+    color: var(--text-color-1);
+    border-radius: var(--border-radius-container);
+
+    .header-logo {
+      display: block;
+      flex-wrap: nowrap;
+
+      .header-title,
+      .name {
+        margin: auto;
+      }
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+
+      .navigation-items {
+        display: flex;
+        gap: 15px;
+      }
+    }
+
+    .download-resume-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: max-content;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navigation {
+    .navigation-items {
+      display: block !important;
+
+      .navigation-item {
+        display: block !important;
+        text-align: center;
+        color: var(--text-color-1);
+      }
+    }
+  }
+}

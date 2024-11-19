@@ -1,10 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="container-header">
+        <div class="header-logo">
+          <div class="name">
+            <h3>Sebastien Joseph</h3>
+          </div>
+          <div class="header-title">
+            <h4 class="title-1">Software Developer</h4>
+          </div>
+        </div>
+        <div class="navigation">
+          <nav class="navigation-items">
+            <a class="navigation-item home" href="./index.html">Home</a>
+            <a href="./portfolio.html" class="navigation-item portfolio"
+              >Portfolio</a
+            >
+            <a href="./contact.html" class="navigation-item contact">Contact</a>
+          </nav>
+        </div>
+        <div class="download-resume-btn">
+          <a
+            data-testid="linkElement"
+            href="./file/Resume - Sebastien Joseph.pdf"
+            download
+            target="_blank"
+            class="btn"
+            aria-disabled="false"
+            >DOWNLOAD RESUME
+          </a>
+        </div>
+      </header>
+
+      <!-- mobile -->
+      <header class="container-header-mobile">
+        <div class="header-logo">
+          <div class="name">
+            <h3>Sebastien Joseph</h3>
+          </div>
+          <div class="header-title">
+            <h4 class="title-1">Software Developer</h4>
+          </div>
+        </div>
+        <div class="navigation">
+          <nav class="navigation-items">
+            <a class="navigation-item home" href="./index.html">Home</a>
+            <a href="./portfolio.html" class="navigation-item portfolio"
+              >Portfolio</a
+            >
+            <a href="./contact.html" class="navigation-item contact">Contact</a>
+          </nav>
+        </div>
+        <div class="download-resume-btn">
+          <a
+            data-testid="linkElement"
+            href="./file/Resume - Sebastien Joseph.pdf"
+            download
+            target="_blank"
+            class="btn"
+            aria-disabled="false"
+            >DOWNLOAD RESUME
+          </a>
+        </div>
+      </header>
+      <div class="container-summary">
+        <div class="summary">
+          <p class="paragraph">
+            Skilled in problem-solving, debugging, and writing clean, efficient
+            code. Strong understanding of object-oriented programming, data
+            structures, and version control with Git.
+          </p>
+          <p class="paragraph">
+            Passionate about building user-friendly applications, eager to learn
+            new technologies, and ready to contribute to collaborative
+            development environments.
+          </p>
+          <p class="paragraph">
+            Known for attention to detail, adaptability. Recognized for
+            collaborative approach and delivering secure, scalable solutions
+            that meet business needs.
+          </p>
+        </div>
+      </div>
+      <div class="container-skills">
+        <div class="title">
+          <h2 class="title-text">SKILLS</h2>
+        </div>
+        <div class="skills">
+          <div class="skill-ms skill card">
+            <div class="card-title">
+              <h2 class="card-title-1"></h2>
+              <h3 class="card-title-2">Microsoft 365</h3>
+              <h4 class="card-title-3"></h4>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>IAM</li>
+                <li>Itendity Syncronization</li>
+                <li>Exchange Online | Hybrid</li>
+                <li>SharePoint Online</li>
+                <li>MS Teams</li>
+                <li>Microsoft Purview</li>
+                <li>Microsoft Defender</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skill-aws skill card">
+            <div class="card-title">
+              <h2 class="card-title-1"></h2>
+              <h3 class="card-title-2">AWS</h3>
+              <h4 class="card-title-3"></h4>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>IAM</li>
+                <li>S3</li>
+                <li>API Gateway</li>
+                <li>Lambda</li>
+                <li>DynamoDB</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skill-ft skill card">
+            <div class="card-title">
+              <h2 class="card-title-1"></h2>
+              <h3 class="card-title-2">Frontend</h3>
+              <h4 class="card-title-3"></h4>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Axios</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skill-bt skill card">
+            <div class="card-title">
+              <h2 class="card-title-1"></h2>
+              <h3 class="card-title-2">Backend</h3>
+              <h4 class="card-title-3"></h4>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>Java OOP</li>
+                <li>Dagger</li>
+                <li>Spring</li>
+                <li>Spring boot</li>
+                <li>JUnit</li>
+                <li>Mockito</li>
+                <li>Restful API</li>
+                <li>Caching</li>
+                <li>Multithreading</li>
+                <li>SQL Database</li>
+                <li>NoSQL Database</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skill-osk skill card">
+            <div class="card-title">
+              <h2 class="card-title-1"></h2>
+              <h3 class="card-title-2">Other</h3>
+              <h4 class="card-title-3"></h4>
+            </div>
+            <div class="card-body">
+              <ul>
+                <li>Algorithm</li>
+                <li>Software Architecture</li>
+                <li>Debugging</li>
+                <li>Git</li>
+                <li>JSON</li>
+                <li>JWT</li>
+                <li>Agile Methodology</li>
+                <li>Team Collaboration</li>
+                <li>Time Management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-experience">
+        <div class="title">
+          <h2 class="title-text">MOST RECENT EXPERIENCE</h2>
+        </div>
+        <div class="card-container">
+          <div class="experience-1 card">
+            <div class="experience-1-title card-title">
+              <h2 class="card-title-1">Koclat</h2>
+              <h3 class="card-title-2"></h3>
+              <h4 class="card-title-3">From 2023 to present</h4>
+            </div>
+            <div class="experience-1-body card-body">
+              <p class="paragraph-body paragraph">
+                Managed the Microsoft 365 cloud infrastructure, providing IT
+                support with a focus on Identity and Access Management (IAM),
+                compliance, data integrity and email security to ensure a secure
+                and efficient environment.
+              </p>
+            </div>
+          </div>
+          <div class="experience-separation-line separation-line">
+            <hr />
+          </div>
+          <div class="experience-2 card">
+            <div class="experience-2-title card-title">
+              <h2 class="card-title-1">Zones</h2>
+              <h3 class="card-title-2"></h3>
+              <h4 class="card-title-3">From 2020 to 2023</h4>
+            </div>
+            <div class="experience-2-header card-header"></div>
+            <div class="experience-2-body card-body">
+              <p class="paragraph-body paragraph">
+                Served as a Microsoft Support Engineer in the premier program,
+                assisting Fortune 500 companies with the Microsoft 365 platform,
+                providing support for Exchange, SharePoint, Teams, and other
+                services within the suite.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container-footer">
+      <p>© sebjos. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
