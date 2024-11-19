@@ -1,5 +1,7 @@
 .form-header-container {
+  grid-column: span 12;
   display: flex;
+  height: max-content;
 
   .form-header {
     font-weight: 600;
@@ -13,12 +15,12 @@
 }
 
 .contact-form {
+  grid-column: span 12;
   font-size: 14px;
   display: grid;
-  grid-template-columns: repeat(12, max-content);
+  grid-template-columns: repeat(12, minmax(10px, 30px));
   grid-template-rows: repeat(6, max-content);
-  grid-column-gap: 30px;
-  padding: 50px 0 0;
+  grid-column-gap: 10px;
 }
 
 .form-control {
