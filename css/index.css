@@ -46,15 +46,12 @@
   border-radius: var(--border-radius-container);
 
   .skills {
-    margin: auto;
-    max-width: 1150px;
     display: grid;
     grid-template-columns: repeat(5, max-content);
-    grid-gap: 80px;
+    grid-gap: 60px;
 
     .card {
       white-space: nowrap;
-      margin: 0 auto;
 
       .card-title-2 {
         display: flex;
