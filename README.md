@@ -1,6 +1,6 @@
-# Portfolio
+# Resume
 
-Welcome to my portfolio where you can find my employments, skillsets, current and future projects.
+Welcome to my resume website where you can find my employments, skillsets, current and future projects.
 
 ## Technology Stack
 
