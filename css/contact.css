@@ -122,10 +122,9 @@
             display: flex;
             justify-content: flex-start;
             gap: 15px;
-
           }
         }
-        
+
         p {
           font-size: 1em;
         }
@@ -141,6 +140,10 @@
 
 .fa-brands {
   color: var(--button-link-color);
+}
+
+.deactivated .fa-brands {
+  color: grey !important;
 }
 
 @media screen and (max-width: 1024px) {
