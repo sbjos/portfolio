@@ -31,9 +31,9 @@
   border-radius: 8px;
   box-shadow: var(--box-shadow-card);
   z-index: 0;
-  && :hover {
+  /* && :hover {
     box-shadow: var(--box-shadow-card-hover);
-  }
+  } */
 
   .card-image-container {
     display: flex;
