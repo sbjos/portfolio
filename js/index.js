@@ -3,17 +3,19 @@ $(document).ready(() => {
     highlight(".resume-btn");
   }, 2000);
 
-  fadeIn(".summary");
+  fadeIn(".home-summary");
 
-  onHover(".project");
+  onHoverPortfolioCard(".container-project", ".container-project-grid-hov");
+  onHoverPortfolioCard(".project-im", "card-hov");
+  onHoverPortfolioCard(".project-codecamp", "card-hov");
 });
 
-const onHover = (selector) => {
+const onHoverPortfolioCard = (selector, content) => {
   $(selector).on("mouseenter", () => {
-    $(selector).addClass("hov");
+    $(selector).addClass(content);
   });
   $(selector).on("mouseleave", () => {
-    $(selector).removeClass("hov");
+    $(selector).removeClass(content);
   });
 };
 

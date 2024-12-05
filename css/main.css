@@ -46,7 +46,7 @@ body {
   --box-shadow-container: 0 2px 6px 0 rgba(0 0, 0, 0.32),
     inset 0 -1px 0 0 #9dafd3;
   --box-shadow-card: 0 2px 6px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #ccccce;
-  --box-shadow-card-hover: 0 2px 55px 0 rgba(0, 0, 0, 0.12),
+  --box-shadow-card-hover: 0 2px 55px 0 rgba(100, 71, 146, 0.12),
     inset 0 -1px 0 0 #ccccce;
   --container-content-padding-1: 60px 150px;
   --container-content-padding-2: 65px 15px;
@@ -97,11 +97,6 @@ body {
   .paragraph-banner {
     font-size: 1em;
   }
-}
-
-.hov {
-  /* border: 1px solid red; */
-  box-shadow: var(--box-shadow-card-hover);
 }
 
 .title {
