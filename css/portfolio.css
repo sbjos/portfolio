@@ -25,15 +25,12 @@
   border-radius: var(--border-radius-container);
 }
 
-.card-hov {
-  box-shadow: var(--box-shadow-card-hover) !important;
-}
-
 .card {
   padding: var(--card-content-padding-1);
   background-color: var(--background-color-3);
   border-radius: 8px;
   box-shadow: var(--box-shadow-card);
+  transition: box-shadow 0.3s ease;
   z-index: 0;
 
   .card-image-container {
@@ -165,4 +162,11 @@
       }
     }
   }
+}
+
+/* Script */
+
+.card-hov {
+  box-shadow: var(--box-shadow-card-hover) !important;
+  transition: box-shadow 0.3s ease;
 }

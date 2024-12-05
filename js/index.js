@@ -5,12 +5,12 @@ $(document).ready(() => {
 
   fadeIn(".home-summary");
 
-  onHoverPortfolioCard(".container-project", ".container-project-grid-hov");
-  onHoverPortfolioCard(".project-im", "card-hov");
-  onHoverPortfolioCard(".project-codecamp", "card-hov");
+  onHover(".container-project");
+  onHover(".project-im", "card-hov");
+  onHover(".project-codecamp", "card-hov");
 });
 
-const onHoverPortfolioCard = (selector, content) => {
+const onHover = (selector, content) => {
   $(selector).on("mouseenter", () => {
     $(selector).addClass(content);
   });
@@ -20,9 +20,9 @@ const onHoverPortfolioCard = (selector, content) => {
 };
 
 const highlight = (selector) => {
-  $(selector).fadeOut({ opacity: 0.3 }).fadeIn();
+  $(selector).fadeOut({ opacity: 0.5 }).fadeIn();
 };
 
 const fadeIn = (selector) => {
-  $(selector).css("display", "none").fadeIn(2500);
+  $(selector).css("display", "none").fadeIn(1000);
 };
