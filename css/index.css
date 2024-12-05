@@ -48,7 +48,7 @@
   .skills {
     display: grid;
     grid-template-columns: repeat(5, max-content);
-    grid-gap: 60px;
+    grid-gap: 5%;
 
     .card {
       white-space: nowrap;
