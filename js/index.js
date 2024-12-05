@@ -4,11 +4,16 @@ $(document).ready(() => {
   }, 2000);
 
   fadeIn(".summary");
+
+  onHover(".project");
 });
 
 const onHover = (selector) => {
-  $(selector).on("mouseover", () => {
-    $(selector).addClass("card-hover");
+  $(selector).on("mouseenter", () => {
+    $(selector).addClass("hov");
+  });
+  $(selector).on("mouseleave", () => {
+    $(selector).removeClass("hov");
   });
 };
 

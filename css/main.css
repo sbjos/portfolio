@@ -99,6 +99,11 @@ body {
   }
 }
 
+.hov {
+  /* border: 1px solid red; */
+  box-shadow: var(--box-shadow-card-hover);
+}
+
 .title {
   grid-column: span 2;
   margin-bottom: 35px;
