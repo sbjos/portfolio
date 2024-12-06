@@ -179,6 +179,16 @@
   .container-skills {
     .skills {
       grid-template-columns: repeat(1, max-content) !important;
+      grid-gap: 50px;
+
+      .card-title-2 {
+        justify-content: center !important;
+      }
+
+      .card-body {
+        display: flex;
+        text-align: center;
+      }
     }
   }
 }
