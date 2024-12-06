@@ -4,4 +4,4 @@ Welcome to my resume website where you can find my employments, skillsets, curre
 
 ## Technology Stack
 
-#### Frontend: `HTML - CSS`
+#### Frontend: `HTML - CSS - JavaScript - jQuery`
